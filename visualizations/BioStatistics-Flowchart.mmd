@@ -1,0 +1,20 @@
+graph TB
+    A-->|produce more|Data
+    A-->|helps performing advanced|Experiment    
+    Experiment -->
+        Data[Data] -->
+        Facts/Information -->
+        Communication
+        subgraph Statistics and Data Science
+            subgraph Technology
+                A[Modern Technology]
+            end
+            Biostatistics -->
+            |Design|Experiment
+            Biostatistics -->
+            |Sampling & Processing|Data
+            Biostatistics -->
+            |Analysis, <br/>Find hidden relationships<br/> Make Inference|Facts/Information
+            Biostatistics -->
+            |Correct and Proper Interpretation <br/>Present and visualize|Communication
+        end
